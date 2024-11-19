@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.13.0 on win32)" generated="2024-11-13T16:19:52.903995" rpa="false" schemaversion="5">
+<suite id="s1" name="Table" source="C:\Users\manov\PycharmProjects\pythonProject\automation\Table.robot">
+<test id="s1-t1" name="practice" line="9">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-11-13T16:19:53.215050" level="INFO">Opening browser 'chrome' to base url 'https://rahulshettyacademy.com/AutomationPractice/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-13T16:19:53.214799" elapsed="6.585110"/>
+</kw>
+<kw name="Get Element Count" owner="SeleniumLibrary">
+<msg time="2024-11-13T16:20:00.093281" level="INFO">${row} = 20</msg>
+<var>${row}</var>
+<arg>//*[@id="product"]/tbody/tr</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<status status="PASS" start="2024-11-13T16:19:59.801674" elapsed="0.291658"/>
+</kw>
+<kw name="Get Element Count" owner="SeleniumLibrary">
+<msg time="2024-11-13T16:20:00.107562" level="INFO">${Column} = 3</msg>
+<var>${Column}</var>
+<arg>//*[@id="product"]/tbody/tr/th</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<status status="PASS" start="2024-11-13T16:20:00.093713" elapsed="0.013895"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${row}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-11-13T16:20:00.107958" elapsed="0.000348"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${column}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-11-13T16:20:00.108594" elapsed="0.000340"/>
+</kw>
+<kw name="Get Element Count" owner="SeleniumLibrary">
+<msg time="2024-11-13T16:20:00.120806" level="INFO">${data} = 2</msg>
+<var>${data}</var>
+<arg>//*[@id="product"]/tbody/tr[2]/td[2]</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<status status="PASS" start="2024-11-13T16:20:00.109249" elapsed="0.011601"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${column}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-11-13T16:20:00.121206" elapsed="0.000427"/>
+</kw>
+<status status="PASS" start="2024-11-13T16:19:53.213915" elapsed="6.907951"/>
+</test>
+<status status="PASS" start="2024-11-13T16:19:52.905287" elapsed="7.217164"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Table">Table</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
